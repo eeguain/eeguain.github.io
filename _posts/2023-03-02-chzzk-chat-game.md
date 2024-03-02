@@ -1,0 +1,65 @@
+---
+---
+
+https://github.com/kimcore/chzzk/tree/main 이용시에
+
+let ChzzkChat;
+
+import('https://cdn.skypack.dev/chzzk').then(module => {
+    // Assign the ChzzkChat class to the variable
+    ChzzkChat = module.ChzzkChat;
+    console.log("ready")
+
+    // Now you can use ChzzkChat anywhere in your code where ChzzkChat is in scope
+});
+
+const client = new ChzzkChat({
+    chatChannelId: "N15cWS",
+    accessToken: "OfCpo3LBLFO/5VffnIeGSppagyl7V3fHzVnlgfVINvTePVPAHSQm1KwctdlPL+b2"
+})
+
+client.on('chat', chat => {
+    const message = chat.hidden ? "[블라인드 처리 됨]" : chat.message
+    console.log(`${chat.profile.nickname}: ${message}`)
+
+    // 유저의 팔로우 일시 불러오기
+    // client.chat.profileCard(chzzkChat.chatChannelId, chat.profile.userIdHash).then(profile => {
+    //     const following = profile.streamingProperty.following
+    //     console.log(following ? `${following.followDate} 에 팔로우 함` : "팔로우 안함")
+    // })
+})
+
+await client.connect()
+
+끌때는 client.disconnect()
+
+
+이용안하고 독립적으로
+
+const serverId = Math.abs(
+    "N15cWS".split("")
+        .map(c => c.charCodeAt(0))
+        .reduce((a, b) => a + b)
+) % 9 + 1;
+
+const ws = new WebSocket(`wss://kr-ss${serverId}.chat.naver.com/chat`);
+
+ws.onopen = () => {
+    console.log(111111111);
+
+    // Send the initial message here, after the connection is open
+    ws.send(JSON.stringify({
+        bdy: {
+            accTkn: "6IMUqnFQJ13ZJlIXBTdVeCj/CWppc22hsCoibsa5HxbNd1GXcz5Mz6a57EX8Yi74",
+            auth: "READ",
+            devType: 2001
+        },
+        cmd: 100,
+        tid: 1,
+        cid: "N15cWS",
+        svcid: "game",
+        ver: "2"
+    }));
+};
+
+ws.onmessage = (m) => { console.log(JSON.parse(m.data)); };
