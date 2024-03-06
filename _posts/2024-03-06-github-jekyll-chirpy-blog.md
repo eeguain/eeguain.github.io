@@ -56,6 +56,18 @@ https://www.youtube.com/watch?v=bDQsGdCWv4I&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhc
 https://stackedit.io/
 여기서 알게 됨. -> https://www.irgroup.org/posts/jekyll-chirpy/
 
+    마크다운 네 칸 띄우면 코드로 보여줌. 
+    - [x] 체크박스
+    # 큰 제목 ## 작은 제목
+    > Quote
+    [링크제목](링크주소)
+    |칼럼1|칼럼2|
+    |--|--|
+    |내용|내용|
+    **볼드** *이탤릭* ~~취소선~~
+    - 혹은 숫자 목록
+    UML diagrams using [Mermaid](https://mermaidjs.github.io/)
+
 chirpy theme 선택 이유
 단순한 UI.
 preindexed search (without third party like algolia) -> 이게 어떻게 가능한지는 다음에 블로그 글로 작성.
