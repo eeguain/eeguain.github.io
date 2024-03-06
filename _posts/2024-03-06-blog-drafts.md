@@ -1,0 +1,12 @@
+---
+---
+
+- [x] how to make blog
+- [ ] chimlang search
+- [ ] card game TCP
+- [ ] websocket UDP game
+- [ ] classic webgame
+- [ ] webRTC + free TURN server
+- [ ] chatting involved game
+- [ ] turn based Helen+Tarkov game
+- [ ] chimlang update scheduler
