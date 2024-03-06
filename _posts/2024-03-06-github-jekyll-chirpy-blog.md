@@ -23,6 +23,7 @@ local computer에서 만들어서 commit하려면 https://github.com/cotes2020/j
 local 없이 browser에서만 사용한다면, 
 https://github.com/cotes2020/chirpy-starter
 "Sign in to GitHub and browse to Chirpy Starter, click the button Use this template > Create a new repository, and name the new repository USERNAME.github.io, where USERNAME represents your GitHub username."
+https://www.youtube.com/watch?v=m1RYsmOMPLs
 
 그리고 _config.yml의 url을 유저이름.github.io로 변경한다.
 
@@ -35,6 +36,12 @@ _post 폴더에 md 파일들을 작성하면 된다.
 하이픈 세개
 내용
 
+jekyll 블로그 사용법은 여기 비디오 리스트
+https://www.youtube.com/watch?v=bDQsGdCWv4I&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=12
+
+브라우저에서 마크다운 써보기
+https://stackedit.io/
+여기서 알게 됨. -> https://www.irgroup.org/posts/jekyll-chirpy/
 
 chirpy theme 선택 이유
 단순한 UI.
