@@ -10,3 +10,4 @@
 - [ ] chatting involved game
 - [ ] turn based Helen+Tarkov game
 - [ ] chimlang update scheduler
+- [ ] map websites to upgrade webgame
