@@ -27,6 +27,11 @@ https://www.youtube.com/watch?v=m1RYsmOMPLs
 
 그리고 _config.yml의 url을 유저이름.github.io로 변경한다.
 
+블로그 주소로 들어갔는데, index.html의 내용 그자체 
+layout: home
+# Index page
+이게 나온다면, 해당 repository의 Settings -> Pages -> Build and deployment -> Source: Github actions로 변경.
+
 블로그 완성.
 _post 폴더에 md 파일들을 작성하면 된다.
 
