@@ -35,6 +35,8 @@ layout: home
 블로그 완성.
 _post 폴더에 md 파일들을 작성하면 된다.
 
+제목은 yyyy-mm-dd-title.md
+
 형식은
 하이픈 세개
 날짜, 제목 등등
