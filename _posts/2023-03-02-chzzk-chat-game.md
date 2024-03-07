@@ -76,3 +76,8 @@ pve
 pvp
 url 두 개 붙여넣기하고 대결 시작하면
 캔버스에 전투 보임.
+
+
+chatchannelid token 받아오려면 cors에서 막히는듯
+프록시 서버를 만들면 해결
+혹시 브라우저 안에서 node.js를 돌리는건? webcontainer같은걸로 그리고 puppet같은걸 거기서 돌리면 cors 문제 없이 되려나? 여전히 cors 에러 뜨려나? 긁어온 다음에 js로 넘기는 건 되려나?
