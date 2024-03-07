@@ -76,3 +76,5 @@ preindexed search (without third party like algolia) -> 이게 어떻게 가능�
 github 파일들은 cdn을 사용하면 더 빠르게 접근가능. 
 github에서 자동으로 해 주는 게 있음. 예시: https://cdn.jsdelivr.net/gh/eeguain/eeguain.github.io@master/index.html 
 이거는 계정의 bandwidth 사용량에 포함 안될듯? 확인 필요.
+
+https://pioneergu.github.io/posts/github-blog-jsdelivr-cdn/ 참조
