@@ -81,3 +81,12 @@ url 두 개 붙여넣기하고 대결 시작하면
 chatchannelid token 받아오려면 cors에서 막히는듯
 프록시 서버를 만들면 해결
 혹시 브라우저 안에서 node.js를 돌리는건? webcontainer같은걸로 그리고 puppet같은걸 거기서 돌리면 cors 문제 없이 되려나? 여전히 cors 에러 뜨려나? 긁어온 다음에 js로 넘기는 건 되려나?
+
+
+afreecatv의 경우는 아래 참조
+https://cha2hyun.blog/content/projects/%EB%B0%B0%EB%8F%8C%EC%9D%B4%EC%9D%98%EB%8B%B9%EA%B5%AC%EC%83%9D%ED%99%9C/afreecatv-crawling/
+모바일 버전에서 afreecatv에 들어가서 console network를 보면 websocket 2개가 연결된 것이 보임.
+
+youtube live의 경우는 공식 api를 쓰면
+한 번 불러 올 때 5개의 quota를 씀. 하루에 10,000개의 quota 받을 수 있음.
+
